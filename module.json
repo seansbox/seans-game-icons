@@ -1,0 +1,18 @@
+{
+  "id": "seans-game-icons",
+  "title": "Sean's Game Icons",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "description": "A black-bordered and geometrically-adjusted repackaging of game-icons.net for FoundryVTT",
+  "authors": [
+    {
+      "name": "Sean Lickfold",
+      "url": "https://github.com/seansbox/",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/seansbox/seans-game-icons"
+}
