@@ -18,7 +18,7 @@ for root, dirs, files in os.walk('icons/000000/transparent/1x1/'):
             os.rename(os.path.join(root, file), os.path.join(icons_dir, new_name))
 
 # Clean up and modify SVGs
-shutil.rmtree('icons/000000'); os.remove('game-icons.net.svg.zip')
+shutil.rmtree('icons'); os.remove('game-icons.net.svg.zip')
 for svg_file in os.listdir(icons_dir):
     if svg_file.endswith('.svg'):
         with open(os.path.join(icons_dir, svg_file), 'r+') as file:
