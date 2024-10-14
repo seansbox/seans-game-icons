@@ -2,6 +2,8 @@
 
 A black-bordered and geometrically-adjusted repackaging of icons from [game-icons.net](https://game-icons.net) for FoundryVTT.
 
+The black border and white interior design allows you to use FoundryVTT's tile tinting features to change the icons to any color you want, making them highly customizable for your games.
+
 ## Setup in FoundryVTT
 
 You can install this module in two ways: via `git clone` or by downloading the repository's ZIP file.
