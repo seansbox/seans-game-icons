@@ -24,8 +24,10 @@ for svg_file in os.listdir(icons_dir):
         with open(os.path.join(icons_dir, svg_file), 'r+') as file:
             content = file.read()
             content = re.sub(
-              r'<path fill="#000" ([^/]+)/',
-              r'<path stroke="#000000" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" \1/><path fill="#FFFFFF" \1/', 
+              r'<path fill="#000" ([^/]+)/>',
+              r'<path stroke="#FEFEFE" stroke-width="96" stroke-linecap="round" stroke-linejoin="round" \1/>' +
+              r'<path stroke="#000000" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" \1/>' +
+              r'<path fill="#FFFFFF" \1/>',
               content)
-            content = re.sub(r'viewBox="0 0 512 512"', r'viewBox="-32 -32 576 576"', content)
+            content = re.sub(r'viewBox="0 0 512 512"', r'viewBox="-48 -48 608 608"', content)
             file.seek(0); file.write(content); file.truncate()
